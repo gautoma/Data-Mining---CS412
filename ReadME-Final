@@ -1,0 +1,81 @@
+
+# CS412 Project : BigQuery-Geotab Intersection Congestion
+
+We've all been stuck at traffic lights, missing the green light by a fraction of a second. Let's imagine we could design an algorithm to analyze where the congestions will occur as the amount of data grows. This will aid city planners and governments in anticipating traffic congestion in hot areas in advance, reducing the stress of millions of commuters.
+
+The input data for this project is provided by Geotab and is collected from commercial vehicle telematic devices. The dataset includes aggregate stopped vehicle information and intersection wait times. The task is to predict congestion, based on an aggregate measure of stopping distance and waiting times, at intersections in 4 major US cities: Atlanta, Boston, Chicago & Philadelphia.
+
+
+
+
+## Running our script
+
+You have been given three scripts in our folder:
+1. CS412 Project Script
+2. DBSCAN EPS tuning
+3. Random Forest Parameter Tuning
+
+From these, **CS412 Project Script** is our main script. The remaining two scripts were used to tune the hyperparameters for DBSCAN and Random Forest Regressor.
+To run any of our script, you simply need to follow the following steps:
+
+
+### Step I: Importing and installing the necessary libraries
+
+The following libraries need to be present or installed in your machine for our code to work:
+
+* Pandas (Link: https://pandas.pydata.org)
+* Numpy (Link: https://numpy.org)
+* Matplotlib (Link: https://matplotlib.org)
+* Seaborn (Link: https://seaborn.pydata.org)
+* Scikit Learn (Link: https://scikit-learn.org/stable/)
+* Math (Link: https://docs.python.org/3/library/math.html)
+* Catboost (Link: https://catboost.ai)
+* Time (Link: https://docs.python.org/3/library/time.html)
+
+If you don't have some or any of these libraries installed, you can simply click on the provided link for that library and the webpage will help you in installing the necessary library.
+
+We recommend having the following versions of the library installed to replicate our results:
+
+* Pandas: 1.2.4
+* Numpy: 1.20.1
+* Matplotlib: 3.3.4
+* Seaborn: 0.11.1
+* Scikit Learn: 0.24.1
+* Catboost: 1.0.4
+
+**Note** : As math and time are built-in modules in Python, we cannot find the particular version for it. However, if the script doesnot run due to issues in the math or time module, then we recommend you to just install the latest available version of it.
+
+
+
+### Step II: Downloading the data
+After installing the necessary versions of the library, you will need to go ahead and download the data. The data files can be downloaded from the following link.
+
+Link: https://www.kaggle.com/competitions/bigquery-geotab-intersection-congestion/data
+
+You will need to download the **train.csv** and **test.csv** files from this link.
+
+Please keep the downloaded files and the script in the same folder. Also, don't rename the files.
+
+
+
+
+### Step III: Running the script
+
+After completing step I and II, just open the provided script and run all the cells.
+
+The script takes a while to run (approx 50mins on an M1 Mac with 8GB Ram), so we recommend you have enough battery to run the script.
+
+## References
+
+Two scripts were mainly referred and some code was borrowed from these scripts as well.
+
+* https://www.kaggle.com/code/kabure/insightful-eda-modeling-lgbm-hyperopt/notebook
+* https://www.kaggle.com/code/pradeepmuniasamy/comparative-study-of-models-geotab-inertsection#Modelling
+
+
+## Authors
+
+- Vishwadeepsinh Sarvaiya (vjs6@illinois.edu)
+- Pranav Bhandari (ppb4@illinois.edu)
+- Subhadip Das (das28@illinois.edu)
+
